@@ -1,0 +1,70 @@
+nav {
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4%;
+  font-size: 1.2rem;
+  height: 68px;
+  width: 100%;
+  background: linear-gradient(0deg, rgb(0, 0, 0, 0) 0%, rgb(0, 0, 0, 0.8) 100%);
+}
+
+.nav-left {
+  display: flex;
+  gap: 43px;
+}
+
+.nav-left > ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-right > button {
+  border: none;
+  background: none;
+  padding: 0 4%;
+}
+
+.avatar-container {
+  width: 30px;
+  aspect-ratio: 1;
+  background-color: rgb(255, 59, 124);
+  border-radius: 2px;
+}
+
+button.avatar-button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.down-arrow {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid white;
+  transition: rotate 0.2s;
+}
+
+button.avatar-button:hover > .down-arrow {
+  rotate: 180deg;
+}
+
+@media screen and (min-width: 1200px) {
+  nav {
+    font-size: 14px;
+  }
+}
